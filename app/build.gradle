@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'io.fabric'
+
+
+android {
+
+    signingConfigs {
+        release {
+            keyAlias 'bisnisjabar2018'
+            keyPassword 'jeruknipis46b'
+            storeFile file('/Users/wildananggarahman/Documents/AndroidProject/MyBisnisIndoneisa/bisnis.jks')
+//            storeFile file('./bisnis.jks')
+            storePassword 'jeruknipis46b'
+        }
+    }
+
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.wardwar.mybisnisindoneisa"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 17
+        versionName "1.0.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    ext.support_version = '26.1.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.github.kittinunf.fuel:fuel-android:1.12.1'
+    //for Android
+    implementation 'com.github.kittinunf.fuel:fuel-gson:1.12.1'
+    //for Gson support
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:design:$support_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'org.sufficientlysecure:html-textview:3.5'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //    firebase
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.firebaseui:firebase-ui-auth:4.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.38.1'
+    implementation 'com.google.firebase:firebase-auth:16.1.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.7'
+}
+
+apply plugin: 'com.google.gms.google-services'

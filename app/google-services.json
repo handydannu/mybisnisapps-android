@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "796900532414",
+    "firebase_url": "https://mybisnis-f515f.firebaseio.com",
+    "project_id": "mybisnis-f515f",
+    "storage_bucket": "mybisnis-f515f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796900532414:android:023d15a3e9f9c967",
+        "android_client_info": {
+          "package_name": "com.wardwar.mybisnisindoneisa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796900532414-jc21jvsgsfif9u8kkmg8u0nlk942vtru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wardwar.mybisnisindoneisa",
+            "certificate_hash": "268b4f15d7cba789214da2bd4d836afe3bb39776"
+          }
+        },
+        {
+          "client_id": "796900532414-ajot2sopli6b3c93us2fvei8bb32jrl3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wardwar.mybisnisindoneisa",
+            "certificate_hash": "a242dbac4005e1f5cecec2101dd6dceb7fb66d9f"
+          }
+        },
+        {
+          "client_id": "796900532414-s4n0nu3khu28o0m8ljbvetu3dk0ct6sq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhtMASfKmhqj6NwghSqKOUD_7aiIJUUsk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796900532414-s4n0nu3khu28o0m8ljbvetu3dk0ct6sq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "796900532414-gqujt310pghnek73c6c0d88nsd9b05ao.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sibertama.mybisnis",
+                "app_store_id": "1419062766"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
