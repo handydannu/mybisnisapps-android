@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="85dp">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/component_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:id="@+id/bg_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/header_bg_produk"
+                    app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/judul_kontak"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/alamat_kantor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/alamat_kantor_pusat"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bg_header" />
+
+                <ImageView
+                    android:id="@+id/peta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/peta"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/alamat_kantor"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <ImageView
+                    android:id="@+id/kantor_perwakitan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/kantor_perwakilan"
+                    app:layout_constraintTop_toBottomOf="@id/peta"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/alamat_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/medan_kompleks_istana_bisnis_center_medan_maimun_jl_brigjend"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/kantor_perwakitan"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/kantor_unit_bisnis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/unit_bisnis"
+                    app:layout_constraintTop_toBottomOf="@id/alamat_image"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <ImageView
+                    android:id="@+id/event_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/event_networks_ext_538_532_solopro_ext_536_jogjapro_ext_537"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/kantor_unit_bisnis"
+                    />
+
+                <ImageView
+                    android:id="@+id/kantor_percetakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/percetakan"
+                    app:layout_constraintTop_toBottomOf="@id/event_image"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <ImageView
+                    android:id="@+id/percetakan_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/pt_aksara_grafika_pratama_jl_rawa_gelam_iv_kav_16_b_kawasan_in"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/kantor_percetakan"
+                    />
+
+                <ImageView
+                    android:id="@+id/kantor_koran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/koran_regional"
+                    app:layout_constraintTop_toBottomOf="@id/percetakan_image"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <ImageView
+                    android:id="@+id/kantor_koran_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/solopos_griya_solopos_jl_adisucipto_190_solo_57145_telp_0271"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/kantor_koran"
+                    />
+
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </ScrollView>
+
+        <include
+            layout="@layout/component_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

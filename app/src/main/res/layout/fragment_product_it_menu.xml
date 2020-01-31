@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/frame"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ProductItMenuFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/component_header"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="85dp">
+
+            <RelativeLayout
+                android:id="@+id/bg_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/header_bg_produk"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/produk_it_solution"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_webdev"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="34dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/tombol_webdev"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bg_header" />
+
+            <Button
+                android:id="@+id/btn_webdes"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/tombol_webdes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_webdev" />
+
+            <Button
+                android:id="@+id/btn_webmain"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/tombol_webmain"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_webdes" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:layout_marginTop="34dp"
+                app:layout_constraintTop_toBottomOf="@id/btn_webmain"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="4dp"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

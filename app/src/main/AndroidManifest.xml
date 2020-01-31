@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wardwar.mybisnisindoneisa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBar">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UnautorizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GreetingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginFormActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductVideoMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductItMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductSosmedMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductIklanMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MoreIklanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SolusiMediaTerpaduActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AktivasiMediaSosial"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityKontenYoutubeSosmed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpBrandingGoogle"
+            android:label="@string/title_activity_op_branding_google"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".OpBrandingSosmed"
+            android:label="@string/title_activity_op_branding_sosmed"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductIklanKhusus"
+            android:label="@string/title_activity_product_iklan_khusus"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductIklanPaket"
+            android:label="@string/title_activity_product_iklan_paket"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductIklanSpesifikasi"
+            android:label="@string/title_activity_product_iklan_spesifikasi"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductDiskonPenjualan"
+            android:label="@string/title_activity_product_diskon_penjualan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductIklanUmum"
+            android:label="@string/title_activity_product_iklan_umum"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductBiWeekend"
+            android:label="@string/title_activity_product_bi_weekend"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductIklanJaket"
+            android:label="@string/title_activity_product_iklan_jaket"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductIklanDivider"
+            android:label="@string/title_activity_product_iklan_divider"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductIklanKlasifikasi"
+            android:label="@string/title_activity_product_iklan"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductPermintaanKhusus"
+            android:label="@string/title_activity_product_permintaan_khusus"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductWebDevelopment"
+            android:label="@string/title_activity_product_web_development"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductWebDesign"
+            android:label="@string/title_activity_product_web_design"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductWebMaintenance"
+            android:label="@string/title_activity_product_web_maintenance"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProductCorpBanding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductEpappers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductBuku"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductRadio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductEventOrganizer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductRiset"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductBisnisTv"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductPercetakan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:name=".KonfirmasiActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ForgotPasswordActivity"></activity>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" tools:replace="android:value"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

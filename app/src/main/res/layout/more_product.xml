@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="34dp"
+    android:paddingBottom="34dp"
+    android:background="@color/white"
+    android:id="@+id/more_product"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp">
+
+    <LinearLayout
+        android:id="@+id/percetakan_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:elevation="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/product_percetakan_menu"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/icon_percetakan"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:id="@+id/text_percetakan"
+            style="@style/baseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Percetakan" />
+
+    </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/riset_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageButton
+                    android:id="@+id/product_riset_menu"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/icon_riset"
+                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                <TextView
+                    android:id="@+id/text_riset"
+                    style="@style/baseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:text="Riset" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageButton
+                    android:id="@+id/product_tv_menu"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/icon_tv"
+                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                <TextView
+                    android:id="@+id/text_tv"
+                    style="@style/baseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:text="Bisnis Tv" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/langganan_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/percetakan_wrapper">
+
+                <ImageButton
+                    android:id="@+id/product_langganan_menu"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/icon_langganan"
+                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                <TextView
+                    android:id="@+id/text_langganan"
+                    style="@style/baseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:text="Langganan" />
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/radio_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/riset_wrapper">
+
+        <ImageButton
+            android:id="@+id/product_radio_menu"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/icon_radio"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:id="@+id/text_radio"
+            style="@style/baseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Radio" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

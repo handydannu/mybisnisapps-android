@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/footer_shadow"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:tabIndicatorColor="@color/white">
+
+
+        <android.support.design.widget.TabItem
+            android:icon="@drawable/icon_home"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <android.support.design.widget.TabItem
+            android:icon="@drawable/icon_profil"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <android.support.design.widget.TabItem
+            android:icon="@drawable/keranjang"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <android.support.design.widget.TabItem
+            android:icon="@drawable/icon_menu_lainnya"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+    </android.support.design.widget.TabLayout>
+
+</FrameLayout>

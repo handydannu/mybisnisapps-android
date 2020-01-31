@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">My Bisnis</string>
+
+    <!--unautorize activity text-->
+    <string name="or">or</string>
+    <string name="greeting">Hello User!</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="singUp"><b>Sign Up</b></string>
+    <string name="logIn"><b>Log In</b></string>
+
+    <!--register activity text-->
+    <string name="name">Your Name</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="city">City</string>
+    <string name="company">Company</string>
+    <string name="retypePassword">Retype Password</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">428387420966112</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb428387420966112</string>
+    <string name="title_activity_op_branding_google">OpBrandingGoogle</string>
+    <string name="title_activity_op_branding_sosmed">OpBrandingSosmed</string>
+    <string name="title_activity_iklan_cetak_permintaan_khusus">IklanCetakPermintaanKhusus</string>
+    <string name="title_activity_product_iklan_khusus">ProductIklanKhusus</string>
+    <string name="title_activity_product_iklan_paket">ProductIklanPaket</string>
+    <string name="title_activity_product_iklan_spesifikasi">ProductIklanSpesifikasi</string>
+    <string name="title_activity_product_diskon_penjualan">ProductDiskonPenjualan</string>
+    <string name="title_activity_product_iklan_umum">ProductIklanUmum</string>
+    <string name="title_activity_product_bi_weekend">ProductBiWeekend</string>
+    <string name="title_activity_product_iklan_jaket">ProductIklanJaket</string>
+    <string name="title_activity_product_iklan_divider">ProductIklanDivider</string>
+    <string name="title_activity_product_iklan">ProductIklan</string>
+    <string name="title_activity_product_permintaan_khusus">ProductPermintaanKhusus</string>
+    <string name="title_activity_product_web_development">ProductWebDevelopment</string>
+    <string name="title_activity_product_web_design">ProductWebDesign</string>
+    <string name="title_activity_web_maintenance">WebMaintenance</string>
+    <string name="title_activity_product_web_maintenance">ProductWebMaintenance</string>
+
+
+    <string name="back"><b>Back</b></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_app_id">428387420966112</string>
+    <string name="fb_login_protocol_scheme">fb428387420966112</string>
+    <string name="my_cart">My Cart</string>
+
+    <string name="server_client_id">796900532414-r86podilnnges5u47ldkgabkqfo40nob.apps.googleusercontent.com</string>
+
+
+</resources>
+

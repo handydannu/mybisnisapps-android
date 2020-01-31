@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/frame"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SosmedMenuFragment">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/component_header"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="85dp">
+
+
+            <RelativeLayout
+                android:id="@+id/bg_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/produk_sosial_media"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_aktivasi_medsos"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="34dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/aktivasi_medsos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bg_header" />
+
+            <Button
+                android:id="@+id/btn_opgoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/optimlisasi_branding_di_google_search"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_aktivasi_medsos" />
+
+            <Button
+                android:id="@+id/btn_opyoutube"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/optimalisasi_branding_di_youtube_dan_sosmed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_opgoogle" />
+
+            <Button
+                android:id="@+id/btn_opsosmed"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/optimalisasi_branding_di_sosoal_media"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_opyoutube" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:layout_marginTop="34dp"
+                app:layout_constraintTop_toBottomOf="@id/btn_opsosmed"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="4dp"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

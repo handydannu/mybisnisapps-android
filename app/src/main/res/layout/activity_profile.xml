@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/gerrard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center_horizontal"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="-2.2sp"
+                android:text="Steven Gerrard"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18.5sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_pic" />
+
+            <TextView
+                android:id="@+id/profile_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="-2.2sp"
+                android:text="Company: Stivie G Hotel Bandung"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16.5sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_name" />
+
+
+            <ImageView
+                android:id="@+id/icon_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/icon_surat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_company" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Email:"
+                app:layout_constraintStart_toEndOf="@id/icon_email"
+                app:layout_constraintTop_toBottomOf="@id/profile_company" />
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="Steven Gerrard@stivieghotelbandung.com"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/icon_email"
+                app:layout_constraintTop_toBottomOf="@id/txt_email" />
+
+            <ImageView
+                android:id="@+id/icon_pointer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/icon_pointer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_email" />
+
+            <TextView
+                android:id="@+id/txt_pointer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Adress:"
+                app:layout_constraintStart_toEndOf="@id/icon_email"
+                app:layout_constraintTop_toBottomOf="@id/icon_email" />
+
+            <TextView
+                android:id="@+id/profile_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="Jl. Sersan Badjuri 72 - Bandung, Indonesia"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/icon_email"
+                app:layout_constraintTop_toBottomOf="@id/txt_pointer" />
+
+            <ImageView
+                android:id="@+id/icon_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/icon_telepon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_pointer" />
+
+            <TextView
+                android:id="@+id/txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Phone:"
+                app:layout_constraintStart_toEndOf="@id/icon_email"
+                app:layout_constraintTop_toBottomOf="@id/icon_pointer" />
+
+            <TextView
+                android:id="@+id/profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="+62 222 788 465"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/icon_email"
+                app:layout_constraintTop_toBottomOf="@id/txt_phone" />
+
+            <ImageView
+                android:id="@+id/icon_web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/icon_web"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_phone" />
+
+            <TextView
+                android:id="@+id/txt_webb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Web:"
+                app:layout_constraintStart_toEndOf="@id/icon_email"
+                app:layout_constraintTop_toBottomOf="@id/icon_phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="http://stevieghotelbandung.com"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/icon_email"
+                app:layout_constraintTop_toBottomOf="@id/txt_webb" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

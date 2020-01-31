@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_height="match_parent"
+     android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.wardwar.mybisnisindoneisa.ProductMenuActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="85dp">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/component_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/judul_produk"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+
+                <LinearLayout
+                    android:id="@+id/vide_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/judul">
+
+                    <ImageButton
+                        android:id="@+id/product_video_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_video"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:id="@+id/text_video"
+                        style="@style/baseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="Video" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/media_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/judul">
+
+                    <ImageButton
+                        android:id="@+id/product_media_sosial_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_media_sosial"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:id="@+id/text_media_sosial"
+                        style="@style/baseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="Media Sosial" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ads_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/judul">
+
+                    <ImageButton
+                        android:id="@+id/product_ads_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_iklan"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:id="@+id/text_iklan"
+                        style="@style/baseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="Iklan" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/it_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vide_wrapper">
+
+                    <ImageButton
+                        android:id="@+id/product_it_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_it_solution"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:id="@+id/text_it"
+                        style="@style/baseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="IT Solution" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/corp_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/media_wrapper">
+
+                    <ImageButton
+                        android:id="@+id/product_corp_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_corporate_brand"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:id="@+id/text_corp"
+                        style="@style/baseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="Corp. Branding" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lain_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/epapper_wrapper">
+
+                    <ImageButton
+                        android:id="@+id/product_lain_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_lainnya"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:id="@+id/text_lain"
+                        style="@style/baseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="Lainnya..." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/buku_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:elevation="12dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/it_wrapper">
+
+                    <ImageButton
+                        android:id="@+id/product_buku_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_buku"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:id="@+id/text_buku"
+                        style="@style/baseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="Buku" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/eo_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/corp_wrapper">
+
+                    <ImageButton
+                        android:id="@+id/product_eo_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_eo"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:id="@+id/text_eo"
+                        style="@style/baseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="EO" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/epapper_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ads_wrapper">
+
+                    <ImageButton
+                        android:id="@+id/product_epapper_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_epapers"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <TextView
+                        android:id="@+id/text_epapper"
+                        style="@style/baseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="E-Papper" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="169dp"
+                    android:layout_marginTop="34dp"
+                    app:layout_constraintTop_toBottomOf="@id/lain_wrapper"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/iklan"
+                    android:scaleType="fitXY"/>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </ScrollView>
+
+
+    <include
+        layout="@layout/component_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+    <include
+        layout="@layout/more_product" />
+
+</android.support.design.widget.CoordinatorLayout>
+

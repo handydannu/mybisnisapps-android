@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical">
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textSize="12sp"
+            android:text="MEDAN"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp"
+            android:layout_marginBottom="16dp"
+            android:text="Kompleks Istana Bisnis Center, Medan Maimun
+JL. Brigjend. Katamso No. 6 Medan.
+Telp : (061) 45541121 / 4553035
+Email : medan@bisnis.com"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
